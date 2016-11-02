@@ -53,3 +53,7 @@ var bestArtist = function () {
 };
 console.log(bestArtist());
 // The Beatles and Abbey Road
+var lastBeatlesSong = function () {
+  return _.orderBy(_.filter(abbeyRoadRecords, ["artist", "The Beatles"]), 'year', ['desc'])[0].year;
+};
+console.log(lastBeatlesSong());
