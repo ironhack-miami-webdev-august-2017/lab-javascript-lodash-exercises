@@ -20,7 +20,8 @@ var pairsOfBirthdays = _.chunk(birthdays, 2);
 // Adding extra birthdays to the array
 var moreBirthdays = ["Lily Evans", "30 January", "James Potter", "27 March",
                      "Dudley Dursley", "30 June", "Tom Riddle", "31 December"];
-var allBirthdays = _.concat(pairsOfBirthdays, _.chunk(moreBirthdays, 2));
+var allBirthdays = function () { return _.concat(pairsOfBirthdays, _.chunk(moreBirthdays, 2));};
+console.log(allBirthdays());
 
 
 // The Password Problem
@@ -64,3 +65,8 @@ var lastBeatlesSong = function () {
   return _.orderBy(_.filter(abbeyRoadRecords, ["artist", "The Beatles"]), 'year', ['desc'])[0].year;
 };
 console.log(lastBeatlesSong());
+// Sixties Crazyness
+var sixtiesSong = function () {
+  return _.orderBy(_.filter(abbeyRoadRecords, ["year", 1969]), 'month', ['desc'])[0];
+};
+console.log(sixtiesSong().artist + " recorded " + sixtiesSong().song);

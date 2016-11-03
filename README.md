@@ -27,7 +27,6 @@ As you have five departments with 10 people working in each department, your mis
                   "I'm looking for another job",
                   "I don't want to answer"];
  ```
- 
 2) Create a function that randomly picks up one of these items in the `opinions` array.
 
 3) Create a function that pushes the item into the array. You will need to repeat this procedure ten times to create an array of 10 opinions.
@@ -50,18 +49,22 @@ Navigating through Internet, we found a very messy array with the birthdays of H
 
 ![Harry Potter picture](https://i.imgur.com/O0DGqAa.png)
 
-Take a look at the `harryPotter.js` array. It is so messy, they can't even remember which date belongs to whom. But we know each date follows each character's name. Turn this array into arrays of pairs.
+Take a look at the `harryPotter.js` array. It is so messy, they can't even remember which date belongs to whom. But we know each date follows each character's name.
 
-:::success
+Let's organize Harry Potter Character's Birthdays. Unfortunately, [*Scourgify*](http://harrypotter.wikia.com/wiki/Scouring_Charm) won't help us now, but Lodash could...
+
+1) Create a function that receives an array and returns an array of two dimensions. Each internal array should have the name of one character and his date of birthday.
+
+
 :bulb: **Hint:** Look at the Lodash Array methods.
-:::
 
-
-Some of the birthdays are missing. But we found another array with birthdays from the book. Add these birthdays to the array you had before.
+2) Now that we have our two-dimensions array, we notice that some of the birthdays are missing. But we found another array with birthdays from the book.
 ```javascript
 var moreBirthdays = ["Lily Evans", "30 January", "James Potter", "27 March",
                      "Dudley Dursley", "30 June", "Tom Riddle", "31 December"];
 ```
+3) Create a function that add this array above to the first one you manipulated with the same format. The function should return an array with all the birthdays in pairs.
+
 
 ## The Password Problem
 
@@ -136,7 +139,23 @@ var bestArtist = function () {
 //Remember to execute the function to actually assing the value to the var.
 ```
 
-**EXTRA: The Beatles and Abbey Road:** When did the four of Liverpool recorded their last song in Abbey Road Studios?
+**The Beatles and Abbey Road:** When did the four of Liverpool recorded their last song in Abbey Road Studios?
+
+```javascript=
+var lastBeatlesSong = function () {
+  //your code
+};
+//Remember to execute the function to actually assing the value to the var.
+```
+
+**Sixties crazyness:** The sixties were a crazy decade. Could you retrieve the last song it was recorded in Abbey Road Studios in the decade of 1960's?
+
+```javascript=
+var sixtiesSong = function () {
+  //your code
+};
+//Remember to execute the function to actually assing the value to the var.
+```
 
 ## Summary
 
