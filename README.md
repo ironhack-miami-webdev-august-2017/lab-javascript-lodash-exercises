@@ -6,29 +6,49 @@ To solve them, please refer to the formal [Lodash documentation](https://lodash.
 
 ## The Office
 
-<iframe src="//giphy.com/embed/Kcgz655R3kcO4" width="480" height="189" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="http://giphy.com/gifs/disney-computer-the-incredibles-Kcgz655R3kcO4">via GIPHY</a></p>
+![The Office picture](https://i.imgur.com/9g31Bwo.gif)
 
 You work in a taxes office. Boring, right? And suddenly you discover you can use your extra time to learn how to code. An email arrives. Your bosses are sending a satisfaction survey. You decide to model the satisfaction of your coworkers.
 
-- As you have five departments with 10 people working in each department, create a 5x10 array and fill it randomly with numbers from 1 to 20 to model the satisfaction survey results.
+As you have five departments with 10 people working in each department, your mission is to create a 5x10 array and fill it randomly with made up opinions to model the satisfaction survey results. Employees can be:
 
-:::success
-:bulb: **Hint:** Look at the Lodash Array methods. Use `_.times` if you need to repeat an action.
-:::
+ - This is the best job ever
+ - Satisfied.
+ - At least I get paid.
+ - I'm looking for another job.
+ - I don't want to answer.
+ 
+ 1) Create an array that matches these opinions.
+ 
+ ```javascript=
+ var opinions = [ "This is the best job ever",
+                  "Satisfied",
+                  "At least I get paid",
+                  "I'm looking for another job",
+                  "I don't want to answer"];
+ ```
+ 
+2) Create a function that randomly picks up one of these items in the `opinions` array.
 
+3) Create a function that pushes the item into the array. You will need to repeat this procedure ten times to create an array of 10 opinions.
+
+4) Create another function that pushes the 10-items-array into another array. You will need to do this five times to create the five departments. At the end you will have something like the function below:
 ```javascript=
 var employeeSatisfaction = function () {
-  
+  // Steps 2, 3 and 4 here
   return array;
 };
 ```
+
+5) Show your result in the console.
+
+:bulb: **Hint:** Look at the Lodash Array methods. Use `_.times` if you need to repeat an action.
 
 ## Harry Potter's Birthdays
 
 Navigating through Internet, we found a very messy array with the birthdays of Harry Potter's friends and enemies.
 
-
-<iframe src="//giphy.com/embed/EcMfpWsYFKDnO" width="480" height="421" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="http://giphy.com/gifs/funny-photo-fanpop-EcMfpWsYFKDnO">via GIPHY</a></p>
+![Harry Potter picture](https://i.imgur.com/O0DGqAa.png)
 
 Take a look at the `harryPotter.js` array. It is so messy, they can't even remember which date belongs to whom. But we know each date follows each character's name. Turn this array into arrays of pairs.
 

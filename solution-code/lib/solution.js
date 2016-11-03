@@ -1,11 +1,18 @@
-//The Office - Populating an array
+//The Office
+// Array of opinions
+var opinions = [ "This is the best job ever",
+                 "Satisfied",
+                 "At least I get paid",
+                 "I'm looking for another job",
+                 "I don't want to answer"];
+
 var employeeSatisfaction = function () {
   var array = [];
-  var fillDepto = function () { array.push(_.times(10, function () {return _.random(1, 20);}));};
-  _.times(6, function() {return fillDepto();});
+  var fillDepto = function () { array.push(_.times(10, function () {return _.sample(opinions);}));};
+  _.times(5, function() {return fillDepto();});
   return array;
 };
-employeeSatisfaction();
+console.log(employeeSatisfaction());
 
 
 // Harry Potter - Chunking the array
