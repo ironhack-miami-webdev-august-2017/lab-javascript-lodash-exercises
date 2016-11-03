@@ -17,9 +17,9 @@ As you have five departments with 10 people working in each department, your mis
  - At least I get paid.
  - I'm looking for another job.
  - I don't want to answer.
- 
- 1) Create an array that matches these opinions.
- 
+
+
+1) Create an array that matches these opinions.
  ```javascript=
  var opinions = [ "This is the best job ever",
                   "Satisfied",
@@ -32,13 +32,13 @@ As you have five departments with 10 people working in each department, your mis
 3) Create a function that pushes the item into the array. You will need to repeat this procedure ten times to create an array of 10 opinions.
 
 4) Create another function that pushes the 10-items-array into another array. You will need to do this five times to create the five departments. At the end you will have something like the function below:
+
 ```javascript=
 var employeeSatisfaction = function () {
   // Steps 2, 3 and 4 here
   return array;
 };
 ```
-
 5) Show your result in the console.
 
 :bulb: **Hint:** Look at the Lodash Array methods. Use `_.times` if you need to repeat an action.
