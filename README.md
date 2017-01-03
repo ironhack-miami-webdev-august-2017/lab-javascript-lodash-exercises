@@ -1,8 +1,31 @@
-JS Lodash Exercises
-=
+![Ironhack logo](https://i.imgur.com/1QgrNNw.png)
+
+# JS | Lodash Exercises
+
 These exercises will help you to practice and discover some of the most useful functions Lodash provides.
 
 To solve them, please refer to the formal [Lodash documentation](https://lodash.com/) and take a look at the files in the starter code in this repository.
+
+## Requirements
+
+- [Fork this repo](https://guides.github.com/activities/forking/)
+- Clone this repo into your `~/code/labs`
+
+## Submission Instructions
+
+Upon completion, run the following commands
+```
+$ git add .
+$ git commit -m "done"
+$ git push origin master
+```
+Navigate to your repo and create a Pull Request -from your master branch to the original repository master branch.
+
+In the Pull request name, add your name and last names separated by a dash "-"
+
+## Deliverables
+
+You'll receive two files under the `lib/` folder. Keep them just how they are, they contain the data you will use in your exercise but they're not intended to be edited. Write your JavaScript in a new file and make sure you require it properly in the provided `html` file.
 
 ## The Office
 
@@ -27,6 +50,7 @@ As you have five departments with 10 people working in each department, your mis
                   "I'm looking for another job",
                   "I don't want to answer"];
  ```
+
 2) Create a function that randomly picks up one of these items in the `opinions` array.
 
 3) Create a function that pushes the item into the array. You will need to repeat this procedure ten times to create an array of 10 opinions.
@@ -39,6 +63,7 @@ var employeeSatisfaction = function () {
   return array;
 };
 ```
+
 5) Show your result in the console.
 
 :bulb: **Hint:** Look at the Lodash Array methods. Use `_.times` if you need to repeat an action.
@@ -59,12 +84,13 @@ Let's organize Harry Potter Character's Birthdays. Unfortunately, [*Scourgify*](
 :bulb: **Hint:** Look at the Lodash Array methods.
 
 2) Now that we have our two-dimensions array, we notice that some of the birthdays are missing. But we found another array with birthdays from the book.
+
 ```javascript
 var moreBirthdays = ["Lily Evans", "30 January", "James Potter", "27 March",
                      "Dudley Dursley", "30 June", "Tom Riddle", "31 December"];
 ```
-3) Create a function that add this array above to the first one you manipulated with the same format. The function should return an array with all the birthdays in pairs.
 
+3) Create a function that add this array above to the first one you manipulated with the same format. The function should return an array with all the birthdays in pairs.
 
 ## The Password Problem
 
@@ -72,12 +98,9 @@ Yeah, yeah, to set a password is ALWAYS a big trauma. We will ask for a password
 
 ![eCard about Passwords](https://i.imgur.com/CJHtpLw.png)
 
-
 **Different characters:** create a function that receives a password and returns an error if every char in the password is not unique.
 
-:::success
 :bulb: **Hint:** Look at the Lodash Array methods. Use `_.times` if you need to repeat an action.
-:::
 
 ```javascript=
 var goodPsswd = "1234567890";
@@ -89,8 +112,8 @@ var noRepeatChar = function (password) {
 noRepeatChar(goodPsswd);
 noRepeatChar(badPsswd);
 ```
-**Only numbers:** Create a function that receives a password and returns an error if the password has any character different than numbers.
 
+**Only numbers:** Create a function that receives a password and returns an error if the password has any character different than numbers.
 
 ```javascript=
 var goodPsswd = "1234567890";
@@ -160,7 +183,6 @@ var sixtiesSong = function () {
 ## Summary
 
 Lodash could help you, specially when starting to code, to think in a more functional manner. It is also a good tool to avoid repetition and speed up coding time. Through these exercises you got familiar with the Lodash documentation and some of the over a 100 functions it provides.
-
 
 ## Extra Resources
 
